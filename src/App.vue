@@ -1,9 +1,9 @@
 <script setup>
-  import HelloThesis from './components/HelloThesis.vue';
+  import MyComponent from './components/MyComponent.vue';
 </script>
 
 <template>
-  <HelloThesis />
+  <MyComponent />
 </template>
 
 <style scoped></style>
