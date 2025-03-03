@@ -7,6 +7,10 @@
 </script>
 
 <template>
-  <h1>{{greet + myNAME }}</h1>
+  <h1 class="text-red-500">{{greet + myNAME }}</h1>
   <h2>2 + 2 = {{ add(2, 2) }}</h2>
 </template>
+
+<style scoped>
+  @import "tailwindcss";
+</style>
