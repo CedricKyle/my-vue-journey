@@ -24,6 +24,7 @@ import { ref } from 'vue';
     }
   ])
   const newItem = ref('');
+  
   function addItem(){
     items.value.push({id: items.value + 1, label: newItem.value})
     newItem.value = ''

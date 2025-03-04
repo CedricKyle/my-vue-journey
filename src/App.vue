@@ -1,8 +1,8 @@
 <script setup>
-  import VFor from './components/VFor.vue';
+  import vmodel from './components/vmodel.vue';
 </script>
 
 <template>
-  <VFor />
+  <vmodel />
 </template> 
 
