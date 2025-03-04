@@ -6,4 +6,3 @@
   <MyComponent />
 </template>
 
-<style scoped></style>
