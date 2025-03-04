@@ -1,8 +1,8 @@
 <script setup>
-  import MyComponent from './components/MyComponent.vue';
+  import EventHandler from './components/EventHandler.vue';
 </script>
 
 <template>
-  <MyComponent />
-</template>
+  <EventHandler />
+</template> 
 
