@@ -1,8 +1,8 @@
 <script setup>
-  import EventHandler from './components/EventHandler.vue';
+  import Reactive from './components/Reactive.vue';
 </script>
 
 <template>
-  <EventHandler />
+  <Reactive />
 </template> 
 
