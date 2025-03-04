@@ -1,8 +1,8 @@
 <script setup>
-  import Ref from './components/Ref.vue';
+  import ComputedProperties from './components/ComputedProperties.vue';
 </script>
 
 <template>
-  <Ref />
+  <ComputedProperties />
 </template> 
 
