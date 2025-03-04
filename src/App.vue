@@ -1,8 +1,8 @@
 <script setup>
-  import ConditionalRendering from './components/ConditionalRendering.vue';
+  import VFor from './components/VFor.vue';
 </script>
 
 <template>
-  <ConditionalRendering />
+  <VFor />
 </template> 
 
