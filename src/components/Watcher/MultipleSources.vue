@@ -18,3 +18,12 @@ watch([count, message], (newValues, oldValues) => {
   <button @click="count++" class="bg-blue-500 text-white p-2 rounded-md">Increment</button>
   <button @click="message = 'Hello Vue'" class="bg-red-500 text-white p-2 rounded-md">Change Message</button>
 </template>
+
+<!-- App.vue -->
+<!-- <script setup>
+import MultipleSources from './components/Watcher/MultipleSources.vue';
+</script>
+
+<template>
+  <MultipleSources />
+</template> -->

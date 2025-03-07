@@ -1,7 +1,8 @@
 <script setup>
-  import MultipleSources from './components/Watcher/MultipleSources.vue';
+  import RefComponent from '../src/components/TemplateRefs/RefComponent/RefComponent.vue';
 </script>
 
 <template>
-  <MultipleSources />
+  <!-- <BasicComponent /> -->
+  <RefComponent />
 </template>
