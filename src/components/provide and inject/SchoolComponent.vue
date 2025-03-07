@@ -1,4 +1,14 @@
 <script setup>
+import StudentComponent from './StudentComponent.vue';
+
+</script>
+
+<template>
+  <StudentComponent />
+</template> 
+
+<!--App.vue-->
+<!-- <script setup>
 import SchoolComponent from './components/provide and inject/SchoolComponent.vue';
 import { provide } from 'vue';
 
@@ -14,4 +24,6 @@ provide('studentInfo', studentInfo);
 <template>
   <SchoolComponent />
 </template> 
+-->
+
 
