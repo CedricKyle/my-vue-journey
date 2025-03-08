@@ -1,7 +1,7 @@
 <script setup>
-  import RenderModal from './components/AsyncComponent/RenderModal.vue'
+  import CustomeDirectives from './components/CustomDirectives/CustomeDirectives.vue';
 </script>
 
 <template>
-  <RenderModal />
+  <CustomeDirectives />
 </template>
