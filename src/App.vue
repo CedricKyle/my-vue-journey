@@ -1,7 +1,7 @@
 <script setup>
-  import CustomeDirectives from './components/CustomDirectives/CustomeDirectives.vue';
+  import DynamicComponent from './components/DynamicComponent/DynamicComponent.vue';
 </script>
 
 <template>
-  <CustomeDirectives />
+ <DynamicComponent />
 </template>

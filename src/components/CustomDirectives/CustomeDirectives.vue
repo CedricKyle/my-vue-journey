@@ -20,7 +20,7 @@ import { ref } from 'vue';
 </script>
 
 <template>
-  <div class="flex flex-col justify-center items-center min-h-screen">
+  <div class="tab flex flex-col justify-center items-center min-h-screen">
     <div class="m-3">
       <h1>This is Global Custom Directives</h1>
     </div>

@@ -1,5 +1,5 @@
 <script setup>
-import { useSavetoLocal } from '@/useSavetoLocal';
+import { useSavetoLocal } from '@/composables/useSavetoLocal';
 import { ref } from 'vue';
 
 const { data} = useSavetoLocal('message', 'Hello from Composable, Ako ay isang hamak na default')
@@ -20,7 +20,7 @@ const updateMessage = () => {
 </script>
 
 <template>
-  <div class="flex  flex-col justify-center items-center min-h-screen">
+  <div class="tab flex  flex-col justify-center items-center min-h-screen">
     <div class="card bg-base-100 w-96 shadow-sm border-white border p-3">
       <p>Stored Message: {{ data }}</p>
       <div class="flex flex-row justify-center items-center">
