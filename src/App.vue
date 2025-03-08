@@ -1,8 +1,7 @@
 <script setup>
-  import RefComponent from '../src/components/TemplateRefs/RefComponent/RefComponent.vue';
+  import RenderModal from './components/AsyncComponent/RenderModal.vue'
 </script>
 
 <template>
-  <!-- <BasicComponent /> -->
-  <RefComponent />
+  <RenderModal />
 </template>
