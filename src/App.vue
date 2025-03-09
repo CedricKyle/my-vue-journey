@@ -1,7 +1,7 @@
 <script setup>
-  import TodoApp from './components/Projects/TodoList/TodoApp.vue';
+  import DynamicComponent from './components/DynamicComponent/DynamicComponent.vue';
 </script>
 
 <template>
-  <TodoApp />
+  <DynamicComponent />
 </template>

@@ -2,10 +2,11 @@
 import RenderModal from '../AsyncComponent/RenderModal.vue';
 import SavetoLocal from '../ComposableTest/SavetoLocal.vue';
 import CustomeDirectives from '../CustomDirectives/CustomeDirectives.vue';
+import TodoApp from '../Projects/TodoList/TodoApp.vue';
 import Whatis from './Whatis.vue';
 import HowItWork from './HowItWork.vue';
 import WhyUseFull from './WhyUseFull.vue';
-import { Home, FileText, Settings } from 'lucide-vue-next'; // Import icons
+import { Home, FileText, Settings, ListCheck } from 'lucide-vue-next'; // Import icons
 import { ref } from 'vue';
 
 const currentTab = ref('RenderModal')
@@ -14,14 +15,15 @@ const basicCurrentTab = ref(null)
 const tabs ={
   RenderModal: { component: RenderModal, icon: Home }, 
   SavetoLocal: { component: SavetoLocal, icon: FileText }, 
-  CustomeDirectives: { component: CustomeDirectives, icon: Settings }
+  CustomeDirectives: { component: CustomeDirectives, icon: Settings },
+  TodoApp: { component: TodoApp, icon: ListCheck }
 }
 
 const basicTabs = {
   //This is sample basic dynamic component
   Whatis,
   HowItWork,
-  WhyUseFull
+  WhyUseFull,
 }
 
 // Function para i-reset ang basicCurrentTab kapag may pinili sa main tabs
@@ -57,7 +59,7 @@ const selectBasicTab = (tab) => {
         </button>
       </li>
 
-      <div class=" flex flex-col gap-3 pt-110 m-2">
+      <div class=" flex flex-col gap-3 pt-100 m-2">
         <a @click="selectBasicTab('Whatis')" class="cursor-pointer hover:underline">What is Dynamic Component</a>
         <a @click="selectBasicTab('HowItWork')" class="cursor-pointer hover:underline">How it Works</a>
         <a @click="selectBasicTab('WhyUseFull')" class="cursor-pointer hover:underline">Why is it Usefull</a>
