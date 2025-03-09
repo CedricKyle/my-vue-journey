@@ -57,7 +57,7 @@ const selectBasicTab = (tab) => {
         </button>
       </li>
 
-      <div class=" flex flex-col gap-3 pt-150 m-2">
+      <div class=" flex flex-col gap-3 pt-110 m-2">
         <a @click="selectBasicTab('Whatis')" class="cursor-pointer hover:underline">What is Dynamic Component</a>
         <a @click="selectBasicTab('HowItWork')" class="cursor-pointer hover:underline">How it Works</a>
         <a @click="selectBasicTab('WhyUseFull')" class="cursor-pointer hover:underline">Why is it Usefull</a>

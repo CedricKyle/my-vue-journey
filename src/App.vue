@@ -1,7 +1,7 @@
 <script setup>
-  import DynamicComponent from './components/DynamicComponent/DynamicComponent.vue';
+  import  Users from '../src/components/Data Fetching/Users.vue';
 </script>
 
 <template>
- <DynamicComponent />
+  <Users />
 </template>
