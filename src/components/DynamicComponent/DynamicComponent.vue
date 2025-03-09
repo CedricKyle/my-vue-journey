@@ -3,10 +3,11 @@ import RenderModal from '../AsyncComponent/RenderModal.vue';
 import SavetoLocal from '../ComposableTest/SavetoLocal.vue';
 import CustomeDirectives from '../CustomDirectives/CustomeDirectives.vue';
 import TodoApp from '../Projects/TodoList/TodoApp.vue';
+import RandomQuotes from '../Projects/RandomQuotes.vue';
 import Whatis from './Whatis.vue';
 import HowItWork from './HowItWork.vue';
 import WhyUseFull from './WhyUseFull.vue';
-import { Home, FileText, Settings, ListCheck } from 'lucide-vue-next'; // Import icons
+import { Home, FileText, Settings, ListCheck, Shuffle  } from 'lucide-vue-next'; // Import icons
 import { ref } from 'vue';
 
 const currentTab = ref('RenderModal')
@@ -16,8 +17,13 @@ const tabs ={
   RenderModal: { component: RenderModal, icon: Home }, 
   SavetoLocal: { component: SavetoLocal, icon: FileText }, 
   CustomeDirectives: { component: CustomeDirectives, icon: Settings },
-  TodoApp: { component: TodoApp, icon: ListCheck }
+  TodoApp: { component: TodoApp, icon: ListCheck },
+  RandomQuotes: { component: RandomQuotes, icon: Shuffle },
 }
+
+const formatTabName = (name) => {
+  return name.replace(/([a-z])([A-Z])/g, '$1 $2'); // Add space before uppercase letters
+};
 
 const basicTabs = {
   //This is sample basic dynamic component
@@ -55,7 +61,7 @@ const selectBasicTab = (tab) => {
       <li v-for="(tab, tabIndex) in tabs" :key="tabIndex" class="m-2">
         <button @click="selectMainTab(tabIndex)" :class="{active: currentTab === tabIndex}">
           <component :is="tab.icon" class="w-5 h-5" />
-          {{ tabIndex }}
+          {{ formatTabName(tabIndex) }}
         </button>
       </li>
 
