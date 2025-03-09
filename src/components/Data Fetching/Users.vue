@@ -1,5 +1,6 @@
 <script setup>
   import { ref, onMounted } from 'vue';
+  import axios from 'axios';
 
   const user = ref([])
   const loading = ref(true)
@@ -7,12 +8,9 @@
 
   const fetchUsers = async () => {
     try{
-      const response = await fetch('https://jsonplaceholder.typicode.com/users')
-      if(!response.ok){
-      throw new Error('Error fetching data')
-      }
+      const response = await axios.get('https://jsonplaceholder.typicode.com/users')
 
-      user.value = await response.json()
+      user.value = await response.data
 
       setTimeout(()=> {
       loading.value = false
