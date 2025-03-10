@@ -1,9 +1,7 @@
 <script setup>
-  // import DynamicComponent from './components/DynamicComponent/DynamicComponent.vue';
-  import CalculatorApp from './components/Projects/CalculatorApp.vue';
+  import DynamicComponent from './components/DynamicComponent/DynamicComponent.vue';
 </script>
 
 <template>
-  <!-- <DynamicComponent /> -->
-   <CalculatorApp />
+  <DynamicComponent />
 </template>

@@ -4,10 +4,11 @@ import SavetoLocal from '../ComposableTest/SavetoLocal.vue';
 import CustomeDirectives from '../CustomDirectives/CustomeDirectives.vue';
 import TodoApp from '../Projects/TodoList/TodoApp.vue';
 import RandomQuotes from '../Projects/RandomQuotes.vue';
+import CalculatorApp from '../Projects/CalculatorApp.vue';
 import Whatis from './Whatis.vue';
 import HowItWork from './HowItWork.vue';
 import WhyUseFull from './WhyUseFull.vue';
-import { Home, FileText, Settings, ListCheck, Shuffle  } from 'lucide-vue-next'; // Import icons
+import { Home, FileText, Settings, ListCheck, Shuffle, Calculator  } from 'lucide-vue-next'; // Import icons
 import { ref } from 'vue';
 
 const currentTab = ref('RenderModal')
@@ -19,6 +20,7 @@ const tabs ={
   CustomeDirectives: { component: CustomeDirectives, icon: Settings },
   TodoApp: { component: TodoApp, icon: ListCheck },
   RandomQuotes: { component: RandomQuotes, icon: Shuffle },
+  CalculatorApp: { component: CalculatorApp, icon: Calculator }
 }
 
 const formatTabName = (name) => {
@@ -65,7 +67,7 @@ const selectBasicTab = (tab) => {
         </button>
       </li>
 
-      <div class=" flex flex-col gap-3 pt-100 m-2">
+      <div class=" flex flex-col gap-3 pt-80 m-2">
         <a @click="selectBasicTab('Whatis')" class="cursor-pointer hover:underline">What is Dynamic Component</a>
         <a @click="selectBasicTab('HowItWork')" class="cursor-pointer hover:underline">How it Works</a>
         <a @click="selectBasicTab('WhyUseFull')" class="cursor-pointer hover:underline">Why is it Usefull</a>
