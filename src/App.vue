@@ -1,8 +1,9 @@
 <script setup>
-  import RandomQuotes from './components/Projects/RandomQuotes.vue';
-  import DynamicComponent from './components/DynamicComponent/DynamicComponent.vue';
+  // import DynamicComponent from './components/DynamicComponent/DynamicComponent.vue';
+  import CalculatorApp from './components/Projects/CalculatorApp.vue';
 </script>
 
 <template>
-  <DynamicComponent />
+  <!-- <DynamicComponent /> -->
+   <CalculatorApp />
 </template>
