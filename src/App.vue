@@ -1,7 +1,7 @@
 <script setup>
-  import DynamicComponent from './components/DynamicComponent/DynamicComponent.vue';
+  import Accordion from './components/Projects/Accordion.vue';
 </script>
 
 <template>
-  <DynamicComponent />
+  <Accordion />
 </template>
