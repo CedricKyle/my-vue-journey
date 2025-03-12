@@ -1,7 +1,7 @@
 <script setup>
-  import Accordion from './components/Projects/Accordion.vue';
+  import FormValidation from './components/Projects/FormValidation.vue';
 </script>
 
 <template>
-  <Accordion />
+  <FormValidation />
 </template>
