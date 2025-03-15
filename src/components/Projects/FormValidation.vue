@@ -13,7 +13,7 @@
   const isUsernameValid = computed(() => formData.value.username.trim() !== '')
   const isEmailValid = computed(() => /^[a-zA-Z0-9._%+-]+@gmail\.com$/.test(formData.value.email))
   const isPasswordValid = computed(() => formData.value.password.length >= 8)
-  const isConfirmPasswordValid = computed(() => formData.value.password === formData.value.confirmPassword)
+  const isConfirmPasswordValid = computed(() => formData.value.confirmPassword === formData.value.password)
 
   const isFormValid = computed(() => {
     return isUsernameValid.value && isEmailValid.value && isPasswordValid.value && isConfirmPasswordValid.value
@@ -33,6 +33,7 @@
 </script>
 
 <template>
+    <!--Alert Container-->
     <div
       v-if="showAlert"
       role="alert" class="alert alert-success w-50 h-auto flex items-center fixed top-4 right-4 ">
@@ -41,6 +42,8 @@
       </svg>
       <span>Account Created!</span>
     </div>
+
+    <!-- Form Container-->
     <div class="flex flex-col justify-center items-center  min-h-screen">
       <form 
       class="border border-green-300 max-w-96   w-full p-6"
@@ -50,8 +53,7 @@
           <input 
           v-model="formData.username"
           type="text" id="username" placeholder="username" class="input w-full">
-          <span 
-          class="text-red-500"
+          <span class="text-red-500"
           v-if="!isUsernameValid">username is required</span>
         </div>
 
@@ -85,9 +87,7 @@
           v-if="!isConfirmPasswordValid">password did not match</span>
         </div>
 
-        <button 
-        class="btn bg-green-400"
-        type="submit" :disabled="!isFormValid">Submit</button>
+        <button class="btn bg-green-400" type="submit" :disabled="!isFormValid">Submit</button>
       </form>
     </div>
 </template>
