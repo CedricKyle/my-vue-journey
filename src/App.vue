@@ -1,7 +1,7 @@
 <script setup>
-  import PasswordGenerator from './components/Projects/PasswordGenerator.vue';
+  import ProgressStep from './components/Projects/ProgressStep.vue';
 </script>
 
 <template>
-  <PasswordGenerator />
+  <ProgressStep />
 </template>

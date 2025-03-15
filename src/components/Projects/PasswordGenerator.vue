@@ -57,7 +57,7 @@
       <button class="btn"
       @click="generatePassword">Generate Password</button>
 
-      <div v-if="generatedPassword" class="generated-password-container p-10">
+      <div v-if="generatedPassword" class="generated-password-container p-">
         <strong>Generated Password:</strong>
         <span class="ml-3 underline">{{ generatedPassword }}</span>
       </div>
