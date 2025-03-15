@@ -1,7 +1,7 @@
 <script setup>
-  import ProgressStep from './components/Projects/ProgressStep.vue';
+  import RandomJokes from './components/Projects/RandomJokes.vue';
 </script>
 
 <template>
-  <ProgressStep />
+  <RandomJokes />
 </template>
