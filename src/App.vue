@@ -1,7 +1,7 @@
 <script setup>
-  import GitHubUser from './components/Projects/GitHubUser.vue';
+  import WikiPedia from './components/Projects/WikiPedia.vue';
 </script>
 
 <template>
-  <GitHubUser />
+  <WikiPedia />
 </template>
