@@ -1,7 +1,6 @@
 <script setup>
   import { ref } from 'vue';
   import axios from 'axios';
-  import { Button } from '@/components/ui/button'
 
   const jokes = ref(null)
   const loading = ref(false)
@@ -22,12 +21,10 @@
     }
   }
 
-  console.log(Button); 
 </script>
 
 <template>
-  <Button>{{ 'Try' }}</Button>
- <div class="jokes-container flex flex-col gap-10 justify-center items-center min-h-screen">
+ <div class="jokes-container flex flex-col gap-10 justify-center items-center min-h-screen bg-mint-500">
   <button @click="fetchJoke" class="btn">Get Jokes</button>
   <div v-if="loading">
     <span class="loading loading-dots loading-xs"></span>

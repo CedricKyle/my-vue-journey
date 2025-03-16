@@ -1,7 +1,7 @@
 <script setup>
-  import RandomJokes from './components/Projects/RandomJokes.vue';
+  import GitHubUser from './components/Projects/GitHubUser.vue';
 </script>
 
 <template>
-  <RandomJokes />
+  <GitHubUser />
 </template>
